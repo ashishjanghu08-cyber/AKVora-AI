@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKVora AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-mark">AK</div>
+      <div>
+        <h1>AKVora <span>AI</span></h1>
+        <p>Your Creative Growth Partner</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="badge">✦ AI MARKETING STUDIO</p>
+      <h2>Create smarter.<br><span>Grow faster.</span></h2>
+      <p class="hero-text">
+        Generate professional marketing content for your business in seconds.
+      </p>
+    </section>
+
+    <section class="card">
+      <label>What do you want to create?</label>
+
+      <select id="type">
+        <option value="Video Ad Script">🎬 Video Ad Script</option>
+        <option value="Instagram Caption">📱 Instagram Caption</option>
+        <option value="Product Description">🛍️ Product Description</option>
+        <option value="Ad Copy">📢 Ad Copy</option>
+        <option value="WhatsApp Promotion">💬 WhatsApp Promotion</option>
+        <option value="Content Ideas">💡 Content Ideas</option>
+      </select>
+
+      <label>Brand / Business Name</label>
+      <input id="business" type="text" placeholder="e.g. Zevro">
+
+      <label>Product / Service</label>
+      <textarea id="product" placeholder="Tell us about your product or service..."></textarea>
+
+      <label>Target Audience</label>
+      <input id="audience" type="text" placeholder="e.g. Young adults, small businesses">
+
+      <label>Tone</label>
+      <select id="tone">
+        <option value="Professional">Professional</option>
+        <option value="Friendly">Friendly</option>
+        <option value="Luxury">Luxury</option>
+        <option value="Bold">Bold</option>
+        <option value="Creative">Creative</option>
+      </select>
+
+      <button id="generateBtn" onclick="generateContent()">
+        ✨ Generate with AKVora AI
+      </button>
+
+      <div id="loading" class="loading hidden">
+        Creating your content...
+      </div>
+
+      <div id="resultBox" class="result hidden">
+        <div class="result-head">
+          <h3>Your AI Content</h3>
+          <button onclick="copyResult()">Copy</button>
+        </div>
+        <pre id="result"></pre>
+      </div>
+    </section>
+
+    <section class="features">
+      <div>
+        <strong>⚡ Fast</strong>
+        <p>Generate content in seconds.</p>
+      </div>
+
+      <div>
+        <strong>🎯 Professional</strong>
+        <p>Ready-to-use marketing content.</p>
+      </div>
+
+      <div>
+        <strong>🚀 Simple</strong>
+        <p>Everything in one place.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 AKVora AI · Your Creative Growth Partner
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
